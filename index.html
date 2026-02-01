@@ -4,30 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intent to Workflow</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Intent-to-Workflow Compiler (IWC)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/styles.css">
+
 </head>
 
 <body>
-    <canvas id="bg"></canvas>
-    <div class="header">
-        <div class="into">
-            <h1>Intent to Workflow</h1>
-            <h3><i>Compiling human intent into executable enterprise workflows using AI agents.</i></h3>
+    <!-- Ambient background -->
+    <div class="bg-layer"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">AI-Driven Automation</div>
+            <h1>Intent-to-Workflow <span class="highlight">Compiler</span></h1>
+            <p class="subtitle">Compiling human intent into executable enterprise workflows using AI agents</p>
+            <p class="description">
+                Modern automation tools require predefined steps, while large language models only generate unstructured
+                task lists.
+                This project introduces an Intent-to-Workflow Compiler, a novel AI system that transforms high-level
+                human intent
+                into structured, executable workflow graphs (DAG). Using semantic AI agents, the system extracts goals,
+                constraints,
+                and dependencies, then compiles them into ordered enterprise-ready workflows.
+            </p>
+            <button class="cta-button" onclick="window.location.href='chatbot.html'">
+                Try the Chatbot
+            </button>
         </div>
-        <p>Modern automation tools require predefined steps, while large language models only generate unstructure task
-            lists. This project introduces an Intent-to-Workflow Compiler, a novel AL system that transforms high-level
-            human intent into a structured, executable workflow graph(DAG).</p>
-        <p>Using semantic AL agents, the system extracts goals, constaints and dependencies then compiles them into an
-            ordered enterpise-ready workflow that can be executed by orchestration platforms.</p>
-        <div class="link"><button onclick="window.location.href='chatbot.html'">Try the System</button></div>
-    </div>
-    <div class="architecture">
-        <h2>System Architecture</h2>
-        <img src="architecture.png" alt="System Architecture" width="800">
-    </div>
+    </section>
 
+    <!-- Workflow Animation Section -->
+    <!-- System Architecture Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Architecture</h2>
+                <p>A detailed view of the Intent-to-Workflow compilation process</p>
+            </div>
 
+            <div class="workflow">
+                <div class="spine"></div>
+
+                <!-- Step 1 -->
+                <div class="step left" data-step="1">
+                    <div class="node"></div>
+                    <div class="connector"></div>
+                    <div class="card">
+                        <span class="step-num">STEP 01</span>
+                        <h3>User Interface</h3>
+                        <p class="subtitle">Intent Chatbot captures raw natural language input from the user and
+                            forwards it into the pipeline.</p>
+                        <div class="tags">
+                            <span class="tag">chatbot</span>
+                            <span class="tag">NL input</span>
+                            <span class="tag">capture</span>
+                        </div>
+                    </div>
+                    <div class="flow-label">Natural Language Intent</div>
+                    <div class="flow-connection"></div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step right" data-step="2">
+                    <div class="node"></div>
+                    <div class="connector"></div>
+                    <div class="card">
+                        <span class="step-num">STEP 02</span>
+                        <h3>Intent Parsing Agent</h3>
+                        <p class="subtitle">Extracts structured goals, scope boundaries, and hard constraints from the
+                            raw intent using an LLM.</p>
+                        <div class="tags">
+                            <span class="tag">LLM</span>
+                            <span class="tag">goals</span>
+                            <span class="tag">scope</span>
+                            <span class="tag">constraints</span>
+                        </div>
+                    </div>
+                    <div class="flow-label">Structured Intent</div>
+                    <div class="flow-connection"></div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step left" data-step="3">
+                    <div class="node"></div>
+                    <div class="connector"></div>
+                    <div class="card">
+                        <span class="step-num">STEP 03</span>
+                        <h3>Workflow Synthesis Agent</h3>
+                        <p class="subtitle">Decomposes the structured intent into a concrete, ordered list of actionable
+                            tasks and sub-steps.</p>
+                        <div class="tags">
+                            <span class="tag">decomposition</span>
+                            <span class="tag">tasks</span>
+                            <span class="tag">sub-steps</span>
+                        </div>
+                    </div>
+                    <div class="flow-label">Task List</div>
+                    <div class="flow-connection"></div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step right" data-step="4">
+                    <div class="node"></div>
+                    <div class="connector"></div>
+                    <div class="card">
+                        <span class="step-num">STEP 04</span>
+                        <h3>Dependency Resolver</h3>
+                        <p class="subtitle">Analyzes task interdependencies and constructs a directed acyclic graph that
+                            defines execution order.</p>
+                        <div class="tags">
+                            <span class="tag">DAG</span>
+                            <span class="tag">ordering</span>
+                            <span class="tag">dependencies</span>
+                        </div>
+                    </div>
+                    <div class="flow-label">Workflow Graph (DAG)</div>
+                    <div class="flow-connection"></div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step left" data-step="5">
+                    <div class="node"></div>
+                    <div class="connector"></div>
+                    <div class="card">
+                        <span class="step-num">STEP 05</span>
+                        <h3>Execution Orchestrator</h3>
+                        <p class="subtitle">Orchestrates task execution along the DAG, monitors progress, and exports
+                            the completed workflow.</p>
+                        <div class="tags">
+                            <span class="tag">orchestration</span>
+                            <span class="tag">export</span>
+                            <span class="tag">monitor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meet the Team</h2>
+                <p>The minds behind the Intent-to-Workflow Compiler</p>
+            </div>
+
+            <div class="team-name">CodeSmurf</div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">SW</div>
+                    <h4>Swanand Wakadmane</h4>
+                    <div class="role">AI/ML Engineer</div>
+                    <p>Leads the development of Intent Parsing Agent and semantic understanding algorithms. Handles LLM
+                        fine-tuning and natural language processing pipeline for accurate intent extraction.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">SK</div>
+                    <h4>Sujal Kadam</h4>
+                    <div class="role">AI/ML Engineer</div>
+                    <p>Develops the Workflow Synthesis Agent and DAG optimization algorithms. Specializes in task
+                        decomposition and dependency resolution for enterprise workflow generation.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">AK</div>
+                    <h4>Atharv Kadam</h4>
+                    <div class="role">UX/UI Designer & Frontend Developer</div>
+                    <p>Designs intuitive chatbot interfaces and workflow visualization tools. Creates responsive user
+                        experiences and implements frontend components for the IWC platform.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">AJ</div>
+                    <h4>Anuj Joshi</h4>
+                    <div class="role">Backend Developer</div>
+                    <p>Architects the compilation pipeline and API infrastructure. Handles data flow between AI agents
+                        and implements the execution orchestrator for workflow management.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-avatar">SS</div>
+                    <h4>Shubham Sathe</h4>
+                    <div class="role">DevOps Engineer</div>
+                    <p>Manages cloud infrastructure and deployment pipelines. Handles containerization, monitoring
+                        systems, and ensures scalable architecture for enterprise-grade performance.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="/static/main.js"></script>
 </body>
 
 </html>
